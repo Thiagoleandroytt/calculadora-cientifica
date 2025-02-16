@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("img/Imagem\ do\ WhatsApp\ de\ 2025-02-14\ à\(s\)\ 21.24.28_219e86c0.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 20px;
+}
+
+.header {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.message__header {
+    color: rgb(24, 23, 23);
+    padding: 10px 20px;
+    font-family: "Dancing Script", serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.calculator {
+    width: 90%;
+    max-width: 320px;
+    background:#ca87e2bb;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.432);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 1.5em;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background: #fff0f5;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #8c48aa;
+    color: rgba(0, 0, 0, 0.766);
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background:#b63ceb;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .message__header {
+        font-size: 2em;
+    }
+
+    .calculator {
+        width: 95%;
+        max-width: 280px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 400px) {
+    .message__header {
+        font-size: 1.8em;
+    }
+
+    .calculator {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
